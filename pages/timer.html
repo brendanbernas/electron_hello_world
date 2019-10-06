@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Timer Test</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+  </head>
+  <body>
+    <h1>Timer Test</h1>
+
+    <label for="waitTime">Notification delay (seconds):</label>
+    <input type="number" id="waitTime" value="1" min="0" max="10">
+    <input type="button" id="startTimer" value="Start Timer">
+
+    <hr>
+    <a href="../index.html">Back</a>
+
+    <script src="./timer.js"></script>
+  </body>
+</html>

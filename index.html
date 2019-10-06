@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <!-- 'unsafe-inline' is required to execute inline JS -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+
+    <p>
+      We are using node <script>document.write(process.versions.node)</script>,
+      Chrome <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.
+    </p>
+
+    <p>
+      You can access the functions of this application by clicking the links 
+      below:
+    </p>
+
+    <ul>
+      <li><a href="pages/timer.html">Timer</a></li>
+      <li><a href="pages/file_access.html">File Access</a></li>
+    </ul>
+
+    <p>
+      You may use the keyboard shortcut ctrl+x / cmd+x to access this page at 
+      any time.
+    </p>
+    
+  </body>
+</html>
